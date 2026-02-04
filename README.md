@@ -33,3 +33,52 @@ It is a refactored, multi-file version of the original “Zootopia” generator:
 ├── requirements.txt           # dependencies
 ├── .env                       # API key (local only; must NOT be committed)
 └── .gitignore                 # ignores .env and other files
+```
+---
+
+## ✅ Requirements
+
+- Python 3.10+ recommended
+
+- API Ninjas account + API key
+
+- Internet connection (for API requests)
+
+## Installation
+```text
+pip install -r requirements.txt
+```
+
+On Windows:
+```text
+py -m pip install -r requirements.txt
+```
+## Configuration
+
+Create a .env file in the project root:
+```text
+API_NINJAS_KEY=your_api_key_here
+```
+## Usage
+```text
+python animals_web_generator.py
+```
+
+Example:
+```text
+Please enter an animal: Fox
+Website was successfully generated to the file animals.html.
+```
+
+Open animals.html in your browser.
+
+## Notes
+
+The generator injects HTML into animals_template.html via a placeholder:
+__REPLACE_ANIMALS_INFO__ (update the constant in the generator if yours differs).
+
+If the API returns no results, the website shows a friendly “not found” message.
+
+## License
+
+Educational / learning project.
