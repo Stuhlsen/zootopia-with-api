@@ -8,10 +8,9 @@ __pycache__/
 *.pyd
 
 # Virtuelle Umgebungen
-venv/
-.venv/
-env/
-.env/
+
+.env
+.env.*
 
 # Packaging / Distribution
 build/
